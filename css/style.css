@@ -1,0 +1,514 @@
+:root {
+  --main-color: #f878f8;
+  --main-hover: #830e83;
+  --secundario-hover: rgb(223, 223, 223);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #893f89, #ffffff) no-repeat;
+}
+
+h1, h2, h3, a {
+  font-family: "Playwrite GB S", cursive;
+}
+
+h2, h3 {
+  color: #4a148c;
+}
+
+.fullWith {
+  width: 100%;
+}
+
+.centrar {
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/*///////////////// NAVEGACION  ////////////////////*/
+menu {
+  height: 40vh;
+  background-image: url("../img/bannerPrincipal.jfif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  padding-right: 20px;
+  justify-content: end;
+  gap: 4px;
+}
+
+button {
+  margin-top: 20px;
+}
+
+.btn {
+  transition: background ease-in 0.2s;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-principal {
+  background-color: var(--main-color);
+  border: 0px;
+}
+
+.btn-secundario {
+  color: black;
+  border: 2px solid var(--main-color);
+}
+
+.btn-principal:hover {
+  background-color: var(--main-hover);
+}
+
+.btn-secundario:hover {
+  border-color: var(--main-hover);
+  background-color: var(--secundario-hover);
+}
+/*///////////////// NAVEGACION  ////////////////////*/
+
+/*///////////////// USO DE GRILLAS ////////////////////*/
+.grid {
+  width: 100%;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  margin-top: 15px;
+}
+/*///////////////// USO DE GRILLAS ////////////////////*/
+
+/*///////////////// TEMAS DESTACADOS ////////////////////*/
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.temas-destacados {
+  width: 80%;
+  margin: 0% auto;
+}
+
+div.temas-destacados {
+  height: 280px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+div.temas-destacados h2 {
+  margin: 0 auto;
+}
+
+.featured-topics h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+ul.lista {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.lista li {
+  border-bottom: 1px solid #ddd;
+}
+
+.lista li:last-child {
+  border-bottom: none;
+}
+
+.lista li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.lista li a:hover {
+  background-color: #f1f1f1;
+}
+/*///////////////// TEMAS DESTACADOS ////////////////////*/
+
+/*///////////////// MAIN CONTENT ////////////////////*/
+section.flex {
+  margin: 0px 10px 0px 10px;
+}
+section.flex h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Estilo de la tarjeta */
+.card {
+  max-width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Imagen de la tarjeta */
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Contenido de la tarjeta */
+.card-content {
+  padding: 15px;
+}
+
+.card-content h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/*////////////////////////PAGINA TIPOS DE NUBES/////////////////////////*/
+/* .tipos_nubes_bg {
+  background-color: #f0c8f0;
+} */
+
+section.tipos_nubes {
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.tipos_nubes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.tipos_nubes img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+thead th {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: bold;
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+}
+
+tbody td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.table-container table {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section.tabla {
+  width: 100%;
+  margin: 0 auto;
+}
+
+div.titulo {
+  width: 100%;
+  background-color: #830e83;
+  
+}
+h1{
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  background-color: #830e83;
+    
+}
+
+
+/*//////////////////////////////BENEFICIOS///////////////////////*/
+
+.flexBeneficio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  max-width: 90%;
+  margin: auto;
+}
+
+.section {
+  width: 45%;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#imagenBeneficio img {
+  width: 560px;
+  height: auto;
+}
+/*//////////////////////////////BENEFICIOS///////////////////////*/
+
+/*//////////////////////////////DESAFIOS///////////////////////*/
+.carousel-container {
+  width: 70%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--lx-gap);
+
+  .carousel {
+    aspect-ratio: 16/9;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    .item {
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      display: none;
+      transition: opacity 0.5s ease-in-out;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .caption {
+        width: 100%;
+        padding: var(--lx-space-01);
+        position: absolute;
+        bottom: 0;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 12px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      &.active {
+        opacity: 1;
+        display: block;
+      }
+    }
+  }
+  .btn-carousel {
+    padding: 1em 2em;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 900;
+    color: #10100e;
+    background-color: rgba(0, 0, 0, 0);
+    transition: transform 0.2s ease-in-out;
+    color: rgba(0, 0, 0, 0);
+
+    &:active,
+    &:focus {
+      transform: translateY(-50%) scale(0.9);
+    }
+
+    &:hover {
+      transform: translateY(-50%) scale(0.96);
+    }
+  }
+
+  .prev {
+    left: -5%;
+  }
+
+  .next {
+    right: -5%;
+  }
+
+  .dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    .dot {
+      cursor: pointer;
+      height: 10px;
+      width: 10px;
+      background-color: #242421;
+      transition: background-color 0.2s ease;
+
+      &.active,
+      &:hover {
+        background-color: var(--main-hover);
+      }
+    }
+  }
+}
+
+.carousel-container h1 {
+  margin: 20px auto;
+}
+
+.carousel-container h2 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.carousel-container p {
+  margin-bottom: 30px;
+}
+
+.carousel-container img {
+  border-radius: 10px;
+}
+
+.flex h2 {
+  margin: 10px 0;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 900px) {
+  div.grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    max-width: 100%;
+    margin: 0 10px;
+  }
+
+  .card-content h2 {
+    font-size: 1em;
+  }
+
+  .card-content p {
+    font-size: 0.9em;
+  }
+
+  .temas-destacados {
+    margin-bottom: 20px;
+  }
+
+  main h1 {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1050px) {
+  .flexBeneficio {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .section h2 {
+    font-size: 1.25rem;
+  }
+
+  .section p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    max-width: 100%;
+    margin: 0 10px;
+  }
+
+  .card-content h2 {
+    font-size: 1em;
+  }
+
+  .card-content p {
+    font-size: 0.9em;
+  }
+  .btn {
+    margin: 0;
+  }
+
+  .flex2 {
+    width: 100%;
+  }
+
+  .tipos_nubes {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+}
